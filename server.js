@@ -1,4 +1,3 @@
-// server.js
 import express from "express";
 import axios from "axios";
 
@@ -6,7 +5,6 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const DEFAULT_RPC = process.env.DEFAULT_RPC || "https://mainnet.infura.io/v3/YOUR_PROJECT_ID";
 
-// Create a reusable axios instance with sane defaults
 const rpcClient = axios.create({
   timeout: 5000, // 5s timeout
   headers: { "Content-Type": "application/json" },
